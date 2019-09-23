@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import Header from './Header.js'
+import Filter from './Filter'
+import Listings from './Listings'
+import listingsData from './data/listingsData';
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      name: 'Joe'
+      name: 'Joe',
+      listingsData
     }
   }
 
   render() {
+    console.log(this.state);
     return (
       <div>
-        Real Estate
+        <Header />
+        <section id="content-area">
+          <Filter />
+          <Listings listingsData={this.state.listingsData} />
+        </section>
       </div>
     )
   }

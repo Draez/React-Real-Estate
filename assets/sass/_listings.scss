@@ -1,0 +1,32 @@
+// Header Styles
+header {
+    display: flex;
+    justify-content: space-around;
+    background: $darkpurple;
+    color: #FFF;
+    padding: 20px 15px;
+    overflow: auto;
+
+    nav {
+        a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 7px 25px;
+            font-weight: 300;
+            text-transform: capitalize;
+            font-size: 0.9rem;
+
+            &:hover {
+                color: $pink;
+            }
+
+            &.register-btn {
+                background: $pink;
+                padding: 10px 25px;
+                text-align: center;
+                color: #FFF;
+                border-radius: 5px;
+            }
+        }
+    }
+}
